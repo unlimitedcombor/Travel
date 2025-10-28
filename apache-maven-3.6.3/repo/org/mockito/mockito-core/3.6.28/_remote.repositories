@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Dec 26 18:30:17 GMT+08:00 2024
+mockito-core-3.6.28-sources.jar>alimaven=
+mockito-core-3.6.28-javadoc.jar>alimaven=
+mockito-core-3.6.28.jar>alimaven=
+mockito-core-3.6.28.pom>alimaven=

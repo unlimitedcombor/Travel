@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Dec 26 18:14:45 GMT+08:00 2024
+reactor-core-3.6.10.pom>alimaven=
+reactor-core-3.6.10-javadoc.jar>alimaven=
+reactor-core-3.6.10-sources.jar>alimaven=

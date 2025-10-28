@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Dec 26 18:30:00 GMT+08:00 2024
+junit-platform-commons-1.7.0.jar>alimaven=
+junit-platform-commons-1.7.0-sources.jar>alimaven=
+junit-platform-commons-1.7.0.pom>alimaven=
+junit-platform-commons-1.7.0-javadoc.jar>alimaven=

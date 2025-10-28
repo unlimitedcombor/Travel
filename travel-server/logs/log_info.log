@@ -1,0 +1,50 @@
+2025-02-12 21:50:28.019 [restartedMain] INFO  com.project.travel.TravelApplication - Starting TravelApplication using Java 1.8.0_361 on ZhangLu with PID 86864 (D:\迅雷下载\travel\travel-server\target\classes started by 张璐 in D:\迅雷下载\travel\travel-server)
+2025-02-12 21:50:28.024 [restartedMain] INFO  com.project.travel.TravelApplication - The following profiles are active: dev
+2025-02-12 21:50:28.103 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-12 21:50:28.104 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-12 21:50:28.830 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-02-12 21:50:28.832 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-02-12 21:50:28.869 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2025-02-12 21:50:29.546 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-02-12 21:50:29.556 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-12 21:50:29.557 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-12 21:50:29.557 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2025-02-12 21:50:29.692 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-12 21:50:29.692 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1587 ms
+2025-02-12 21:50:30.121 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2025-02-12 21:50:31.312 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-02-12 21:50:32.540 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-02-12 21:50:32.795 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-12 21:50:32.830 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-02-12 21:50:32.862 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-02-12 21:50:32.871 [restartedMain] INFO  com.project.travel.TravelApplication - Started TravelApplication in 5.424 seconds (JVM running for 7.221)
+2025-02-12 21:52:28.860 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-12 21:52:28.860 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-02-12 21:52:28.861 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-02-12 21:58:06.432 [http-nio-8080-exec-90] INFO  com.project.travel.handle.MyMetaObjectHandler - 公共字段自动填充[insert]...
+2025-02-12 22:02:02.136 [http-nio-8080-exec-59] INFO  com.project.travel.handle.MyMetaObjectHandler - 公共字段自动填充[update]...
+2025-02-12 22:02:02.143 [http-nio-8080-exec-59] INFO  com.project.travel.handle.MyMetaObjectHandler - 公共字段自动填充[insert]...
+2025-02-12 22:03:07.115 [lettuce-nioEventLoop-4-1] INFO  io.lettuce.core.protocol.CommandHandler - null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:378)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1134)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+2025-02-12 22:03:07.137 [lettuce-eventExecutorLoop-1-7] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was localhost/127.0.0.1:6379
+2025-02-12 22:03:13.439 [lettuce-eventExecutorLoop-1-10] INFO  io.lettuce.core.protocol.ConnectionWatchdog - Reconnecting, last destination was localhost:6379
+2025-02-12 22:03:16.598 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2025-02-12 22:03:16.601 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2025-02-12 22:03:16.611 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed

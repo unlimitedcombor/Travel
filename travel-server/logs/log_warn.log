@@ -1,0 +1,2 @@
+2025-02-12 22:03:09.182 [lettuce-nioEventLoop-4-2] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [localhost:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+2025-02-12 22:03:15.498 [lettuce-nioEventLoop-4-5] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect to [localhost:6379]: Connection refused: no further information: localhost/127.0.0.1:6379

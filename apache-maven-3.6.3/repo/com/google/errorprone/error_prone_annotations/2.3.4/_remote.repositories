@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Dec 26 18:29:22 GMT+08:00 2024
+error_prone_annotations-2.3.4-sources.jar>alimaven=
+error_prone_annotations-2.3.4.jar>alimaven=
+error_prone_annotations-2.3.4-javadoc.jar>alimaven=
+error_prone_annotations-2.3.4.pom>alimaven=
