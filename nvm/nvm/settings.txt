@@ -1,6 +1,0 @@
-root: E:\travel\nvm\nvm
-path: E:\travel\nvm\nvm\nodejs
-
-
-node_mirror: http://npmmirror.com/mirrors/node/
-npm_mirror: http://registry.npmmirror.com/mirrors/npm/
