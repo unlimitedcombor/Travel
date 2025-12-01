@@ -16,6 +16,8 @@ Vue.use(VueQuillEditor)
 Vue.config.productionTip = false
 Vue.use(elementUI)
 
+Vue.prototype.$message.defaults = { duration: 1000 }
+
 //EventBus事件中转
 Vue.prototype.$bus = new Vue()  
 

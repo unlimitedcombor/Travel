@@ -44,9 +44,24 @@
     </span>
     <span slot="footer" class="dialog-footer">
         <el-button @click="closeOrder" size="small">取 消</el-button>
-        <el-button type="primary" @click="saveOrder"  size="small">确 定</el-button>
+        <!-- <el-button type="primary" @click="saveOrder"  size="small">确 定</el-button> -->
+        <el-button type="primary" @click="openPaymentDialog" size="small">确认</el-button>
     </span>
     </el-dialog>
+
+    <el-dialog
+      title="支付"
+      :visible.sync="paymentDialogVisible"
+      width="30%">
+      <div style="text-align:center;">
+        <img :src="require('@/assets/image/pay_qr.jpg')" alt="收款码" style="width:200px;"/>
+        <p>请扫码支付</p>
+      </div>
+      <span slot="footer" class="dialog-footer">
+        <el-button type="primary" @click="confirmPayment">确认支付</el-button>
+      </span>
+    </el-dialog>
+
     <bottoms></bottoms>
   </div>
 </template>
@@ -60,6 +75,7 @@
       return{
         id: "",
         dialogVisible: false,
+        paymentDialogVisible: false,
         content: "",
         date1: "",
         num: "",
@@ -96,6 +112,14 @@
           idCard: ""
         }
         this.dialogVisible = false
+      },
+      openPaymentDialog() {
+        this.dialogVisible = false
+        this.paymentDialogVisible = true
+      },
+      confirmPayment() {
+        this.paymentDialogVisible = false
+        this.saveOrder()
       },
       saveOrder() {
           if (!this.date1) {

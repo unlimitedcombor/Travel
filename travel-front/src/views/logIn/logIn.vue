@@ -20,6 +20,12 @@
             <div class="login8" @click="toRegister">
                 注 册
             </div>
+            <!-- 游客登录按钮 -->
+            <!--
+            <div class="login8" @click="touristLogin">
+                游客登录
+            </div>
+            -->
         </div>
     </div>
   </div>
@@ -45,14 +51,16 @@
             if(!this.loginAccount) {
                 this.$message({
                     message: '请输入用户名',
-                    type: 'warning'
+                    type: 'warning',
+                    duration: 1000
                 });
                 return;
             }
             if(!this.password) {
                 this.$message({
                     message: '请输入密码',
-                    type: 'warning'
+                    type: 'warning',
+                    duration: 1000
                 });
                 return;
             }
@@ -64,7 +72,8 @@
                 if(res.code == 1000) {
                     this.$message({
                         message: '登陆成功',
-                        type: 'success'
+                        type: 'success',
+                        duration: 1000
                     });
                     var that = this
                     var token = res.data.token
@@ -85,6 +94,13 @@
                 }
             })
         },
+        // 游客登录方法
+        touristLogin() {
+            // 设置游客身份标识
+            localStorage.setItem('userType', 'tourist')
+            // 跳转到首页
+            this.$router.push('/')
+        }
     },
     created() {
      
